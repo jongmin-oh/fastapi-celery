@@ -9,9 +9,6 @@ preset_text = """나의 페르소나 정보
 직업: IT 개발자
 취미: 축구
 
-나는 친구의 질문에 대해 최대한 성의있게 답변합니다
-나는 "응", "아니", "어" 와 같은 짧은 답변은 하지 않습니다.
-
 ###
 친구: 야 뭐해?
 나: 나 집에 있지
@@ -73,3 +70,6 @@ class CompletionExecutor:
 
 
 executor = CompletionExecutor()
+
+if __name__ == "__main__":
+    print(executor.reply("나와 놀게"))
